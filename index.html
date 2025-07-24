@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            margin:100px;
+        }
+        #container {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 20px;
+        box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+        background-color: rgb(128, 240, 139);
+        padding:40px;
+        margin:auto;
+        width:80%;
+        border-radius: 20px;
+    }
+    #container>div{
+        background-color: rgb(226, 233, 233);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 20px;
+      height: 60px; 
+      width: 97%;          /* set fixed height for bigger keys */
+    
+       
+        
+    }
+
+    #container>div:hover{
+        background-color: rgb(255, 0, 8);
+        cursor:pointer;
+    }
+    #enter{
+        grid-column:13/span 2;
+    }
+    #shift{
+        grid-column: 12/span 3;
+    }
+    #space{
+        grid-column:5/span 4;
+    }
+    #caps{
+        font-size: medium;
+    }
+    </style>
+</head>
+<body>
+<div id="container">
+
+  <!-- Row 1 -->
+  <div>~</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>0</div>
+  <div>-</div>
+  <div>=</div>
+  <div id="delete">Backspace</div>
+
+  <!-- Row 2 -->
+  <div id="tab">Tab</div>
+  <div>Q</div>
+  <div>W</div>
+  <div>E</div>
+  <div>R</div>
+  <div>T</div>
+  <div>Y</div>
+  <div>U</div>
+  <div>I</div>
+  <div>O</div>
+  <div>P</div>
+  <div>[</div>
+  <div>]</div>
+  <div>\</div>
+
+  <!-- Row 3 -->
+  <div id="caps">Caps lock</div>
+  <div>A</div>
+  <div>S</div>
+  <div>D</div>
+  <div>F</div>
+  <div>G</div>
+  <div>H</div>
+  <div>J</div>
+  <div>K</div>
+  <div>L</div>
+  <div>;</div>
+  <div>'</div>
+  <div id="enter">Enter</div>
+
+  <!-- Row 4 -->
+  <div id="shift1">Shift</div>
+  <div>Z</div>
+  <div>X</div>
+  <div>C</div>
+  <div>V</div>
+  <div>B</div>
+  <div>N</div>
+  <div>M</div>
+  <div>,</div>
+  <div>.</div>
+  <div>/</div>
+  <div id="shift">Shift</div>
+
+  <!-- Row 5 -->
+  <div id="control">Ctrl</div>
+   <div>Fn</div>
+  <div>Win</div>
+  <div>alt</div>
+  <div id="space" >Space</div>
+  <div>alt</div>
+ 
+  <div>Win</div>
+  <div>Ctrl</div>
+
+</div>
+    
+</body>
+</html>
